@@ -1,0 +1,33 @@
+<div class="position">
+    <mat-card class="mat-card-cont">
+        <mat-card-header>
+            <mat-card-title>
+                Login
+            </mat-card-title>
+            <mat-card-subtitle>
+                Plase enter credentials.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="formLogin">
+                <small style="color: red;" *ngIf="error">Invalid credentials</small>
+                <mat-form-field [style.width.%]="'100'" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" matInput>
+                    <mat-error *ngIf="this.formLogin.controls['email'].invalid">{{ getErrorMessage() }}</mat-error>
+                </mat-form-field>
+                <mat-form-field [style.width.%]="'100'" appearance="outline">
+                    <mat-label>Enter your password</mat-label>
+                    <input  formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="this.formLogin.controls['password'].invalid">{{ getPasswordErrorMessage() }}</mat-error>
+                </mat-form-field>
+                <button (click)="submitLogin()" mat-raised-button color="primary" [disabled]="!formLogin.valid">Sign in</button>
+                <br>
+                <small style="color: #ccc">Desarrollado por Joe Sierra.</small>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

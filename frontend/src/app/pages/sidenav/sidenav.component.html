@@ -1,0 +1,9 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="loggedIn">
+      <p>Auto-resizing sidenav</p>
+      <button (click)="logout()">Logout</button>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>
