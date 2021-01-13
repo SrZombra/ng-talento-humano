@@ -20,6 +20,7 @@ import { BaseUrl } from './base-url';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { HomeComponent } from './pages/home/home.component';
+import { EndowmentComponent } from './pages/novelties/endowment/endowment.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './pages/home/home.component';
     NavBarComponent,
     SidenavComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    EndowmentComponent
   ],
   imports: [
     BrowserAnimationsModule,
