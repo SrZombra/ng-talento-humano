@@ -1,0 +1,44 @@
+@media screen and (max-width: 599px) {
+    .example-mat-card {
+        width: 90%;
+        margin: 2%;
+    }
+}
+  
+@media screen and (min-width: 600px) {
+    .example-mat-card {
+        width: 29%;
+        margin: 1%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .cards-content{
+        display: flex;
+        justify-content: center;
+    }
+}
+.active-users{
+    font-size: 100px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+}
+
+.div-vacant-card{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    .vacant-card{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .vacant-card{
+        width: 100%;
+    }
+}

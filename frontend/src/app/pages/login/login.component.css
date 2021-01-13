@@ -4,13 +4,21 @@
     left: auto;
 }
 
-.mat-card-cont{
-    width: 25%;
-}
-
 .position{
     display: flex;
     height: 80%;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 599px){
+    .mat-card-cont{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .mat-card-cont{
+        width: 25%;
+    }
 }

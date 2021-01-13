@@ -23,6 +23,7 @@
     "@angular/router": "~11.1.0-next.0",
     "@ng-idle/core": "^10.0.0-beta.1",
     "@ng-idle/keepalive": "^10.0.0-beta.1",
+    "chart.js": "^2.9.4",
     "rxjs": "~6.6.0",
     "sweetalert2": "^10.13.0",
     "tslib": "^2.0.0",
