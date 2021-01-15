@@ -2,7 +2,30 @@
                          [style.marginTop.px]="mobileQuery.matches ? 10 : 0">
     <mat-sidenav class="example-sidenav" #drawer [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+                 <p class="nameUser">Bienvenido MrTest al sistema <strong>TH.</strong></p>
                  <mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Administración
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-nav-list>
+                      <a mat-list-item >Usuarios</a>
+                      <a mat-list-item >Cambiar contraseña</a>
+                    </mat-nav-list>
+                  </mat-expansion-panel>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Registros
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-nav-list>
+                      <a mat-list-item >Personal</a>
+                      <a mat-list-item >Documentos</a>
+                    </mat-nav-list>
+                  </mat-expansion-panel>
                   <mat-expansion-panel>
                     <mat-expansion-panel-header>
                       <mat-panel-title>
@@ -10,10 +33,39 @@
                       </mat-panel-title>
                     </mat-expansion-panel-header>
                     <mat-nav-list>
-                      <a mat-list-item routerLink="/endowment">Dotación</a>
+                      <a mat-list-item >Dotación</a>
+                      <a mat-list-item >Inducción/Evaluación</a>
+                      <a mat-list-item >Capacitaciones</a>
+                      <a mat-list-item >Historia Laboral</a>
+                      <a mat-list-item >Descargos Personal</a>
                     </mat-nav-list>
                   </mat-expansion-panel>
-                 </mat-accordion>
+                  <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        Aspirantes
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-nav-list>
+                      <a mat-list-item >Crear vacante</a>
+                      <a mat-list-item >Agregar aspirante</a>
+                      <a mat-list-item >Registrar proceso</a>
+                      <a mat-list-item >Informe aspirantes</a>
+                      <a mat-list-item >Postulados</a>
+                    </mat-nav-list>
+                  </mat-expansion-panel>
+                 <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Salud
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-nav-list>
+                    <a mat-list-item >Incapacidades</a>
+                    <a mat-list-item >Accidentes</a>
+                  </mat-nav-list>
+                </mat-expansion-panel>
+               </mat-accordion>
                  <mat-nav-list>
                   <a mat-list-item (click)="logout()" >Salir</a>
                 </mat-nav-list>

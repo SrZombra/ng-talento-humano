@@ -55,3 +55,8 @@ h1.example-app-name {
 .mat-sidenav-content{
   padding: 20px;
 }
+
+.nameUser{
+  margin: 10px;
+  color: #c2185b;
+}

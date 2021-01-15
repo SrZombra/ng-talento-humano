@@ -2,6 +2,7 @@
     .example-mat-card {
         width: 90%;
         margin: 2%;
+        margin-left: 0;
     }
 }
   
@@ -40,5 +41,8 @@
 @media screen and (max-width: 599px) {
     .vacant-card{
         width: 100%;
+    }
+    .div-vacant-card{
+        margin-bottom: 30px;
     }
 }
